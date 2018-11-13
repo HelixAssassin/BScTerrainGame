@@ -42,10 +42,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 683, y: 492}
+  m_MinSize: {x: 681, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 36
+  controlID: 9
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -90,8 +90,8 @@ MonoBehaviour:
     y: 0
     width: 370
     height: 664
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -208,10 +208,10 @@ MonoBehaviour:
     y: 0
     width: 1516
     height: 947
-  m_MinSize: {x: 406, y: 492}
+  m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 37
+  controlID: 10
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -232,10 +232,10 @@ MonoBehaviour:
     y: 0
     width: 1516
     height: 664
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+  m_MinSize: {x: 404, y: 221}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 38
+  controlID: 11
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -463,21 +463,21 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\shaan\Documents\GitHub\BScTerrainGame\New Terrain Project
     BSc
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 580a0000
-    m_LastClickedID: 2648
-    m_ExpandedIDs: 00000000580a0000100b00003c0b00003a0c0000e00c0000320f0000340f00005a0f000078100000ba100000861100003e12000000ca9a3b
+    scrollPos: {x: 0, y: 171}
+    m_SelectedIDs: 96390000
+    m_LastClickedID: 14742
+    m_ExpandedIDs: 00000000580a0000100b00003c0b00003a0c0000e00c0000320f0000340f00005a0f000078100000ba100000841100003a12000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -505,7 +505,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000580a0000100b00003c0b00003a0c0000e00c0000320f0000340f00005a0f000078100000ba100000861100003e120000
+    m_ExpandedIDs: 00000000580a0000100b00003c0b00003a0c0000e00c0000320f0000340f00005a0f000078100000ba100000841100003a120000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -621,9 +621,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b06cffff
-    m_LastClickedID: -37712
-    m_ExpandedIDs: e6fbffff000000001c140000
+    m_SelectedIDs: ce130000
+    m_LastClickedID: 5070
+    m_ExpandedIDs: 46cefdffe6fbffff000000004a130000a41300002a140000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -673,14 +673,14 @@ MonoBehaviour:
     height: 643
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 1760.3488348149676
+  lastFramingTime: 283.4402443251085
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.9981298, y: 2.4087327, z: 8.926577}
+    m_Target: {x: -7.98907, y: -3.9046159, z: 2.7601042}
     speed: 2
-    m_Value: {x: -3.9981298, y: 2.4087327, z: 8.926577}
+    m_Value: {x: -7.98907, y: -3.9046159, z: 2.7601042}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -708,13 +708,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.05198223, y: -0.9458001, z: 0.2574961, w: 0.19093408}
+    m_Target: {x: -0.15278283, y: 0.84009916, z: -0.30362657, w: -0.42273134}
     speed: 2
-    m_Value: {x: 0.05198223, y: -0.9458001, z: 0.2574961, w: 0.19093408}
+    m_Value: {x: -0.15278283, y: 0.84009916, z: -0.30362657, w: -0.42273134}
   m_Size:
-    m_Target: 4.6578937
+    m_Target: 17.764133
     speed: 2
-    m_Value: 4.6578937
+    m_Value: 17.764133
   m_Ortho:
     m_Target: 0
     speed: 2
