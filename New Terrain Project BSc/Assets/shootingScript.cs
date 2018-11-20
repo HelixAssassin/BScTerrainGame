@@ -5,16 +5,24 @@ using UnityEngine;
 public class shootingScript : MonoBehaviour {
 
     [SerializeField] int damageDealt = 20;
+    [SerializeField]
+    LayerMask layermask;
 
 	// Use this for initialization
 	void Start () {
+        anim = GetComponent<Animator>(); 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        layermask = Physics.IgnoreRaycastLayer;
+        layermask = ~layermask;
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        if (Physics.Raycast(mouseRay, out hitInfo, 100, ~layermask))
+            print(hitInfo.transform);
+
 		if (Input.GetKey(KeyCode.Escape)) {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
