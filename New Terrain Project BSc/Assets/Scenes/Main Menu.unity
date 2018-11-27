@@ -203,7 +203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.29556784, g: 0.7735849, b: 0.5196641, a: 1}
+  m_Color: {r: 0.036712356, g: 0.7075472, b: 0.35563394, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -591,7 +591,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Zombies in Space
+  m_Text: Zombies In Space
 --- !u!222 &740540426
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -960,7 +960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.29556784, g: 0.7735849, b: 0.5196641, a: 1}
+  m_Color: {r: 0, g: 0.4528302, b: 0.21528, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1147,7 +1147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.15477037, g: 0.8867924, b: 0.61577386, a: 1}
+  m_Color: {r: 0, g: 0.6698113, b: 0.4230387, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1402,7 +1402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.246707, g: 0.8301887, b: 0.486894, a: 1}
+  m_Color: {r: 0.036712356, g: 0.7075472, b: 0.31134942, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

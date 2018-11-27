@@ -7,6 +7,7 @@ public class EnemyMovement : MonoBehaviour {
     Transform playerModel;
     CharacterController controller;
 
+    // This allows the character object to move, jump and be affected by gravity
     [SerializeField] float jumpSpeed = 20.0f;
     [SerializeField] float gravity = 1.0f;
     float yVelocity = 0.0f;
@@ -17,6 +18,7 @@ public class EnemyMovement : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        // This code segment allows the enemy game object to follow an object that is tagged with player.
         GameObject playerGameObject = GameObject.FindGameObjectWithTag("Player");
         playerModel = playerGameObject.transform;
         controller = GetComponent<CharacterController>();

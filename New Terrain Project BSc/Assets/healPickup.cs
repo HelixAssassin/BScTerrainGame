@@ -8,9 +8,8 @@ public class healPickup : MonoBehaviour {
     {
         //print("pick up");
         Health health = collider.GetComponent<Health>();
-        if (health != null&&collider.tag=="Player")
+        if (health != null)
         {
-            GetComponent<MeshRenderer>().enabled = false;
             health.Damage(-50);
         }
     }

@@ -6,10 +6,13 @@ public class EnemyAttack : MonoBehaviour {
 
     float nextTimeAttackIsAllowed = -1.0f;
 
+    // This dictates the time delay between melee attacks for the enemy.
     [SerializeField] float attackDelay = 1.0f;
 
+    // This dictates the amount of damage that the enemy can deal.
     [SerializeField] int damageDealt =5;
 
+    // This makes sure that the enemy can only damage an object that is tagged with Player.
     void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player"&&Time.time>=nextTimeAttackIsAllowed) {
