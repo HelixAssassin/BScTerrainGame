@@ -12,7 +12,6 @@ public class CameraSwitch : MonoBehaviour {
         camera1.SetActive(true);
         camera2.SetActive(false);
      }
-	
 	// Update is called once per frame
 	void FixedUpdate () {
         Debug.DrawRay(transform.position, (transform.position + (new Vector3(10, 0, 0))), Color.red);
