@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
@@ -8,24 +9,16 @@ public class GameManager : MonoBehaviour {
     public TextAlignment score;
     public TextAlignment playerHealthTxt;
     public TextAlignment timeTxt;
+   
 
-	// Use this for initialization
-	void Start () {
-        GameManager manager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-
-        healthBar = manager.playerHealth;
-        healthTxt = manager.playerHealthTxt;
-        scoreNum = manager.score;
-        timeNum = manager.timeTxt;
-
-        healthBar.maxValue = healthScript.getMaxHealth();
-        healthBar.value = healthScript.getHealth();
-        healthTxt.text = "Health" + healthScript.getHealth();
-
-	}
+    // Use this for initialization
+    void Start () {
+  
+    }
 	
 	// Update is called once per frame
 	void Update () {
+
 		
 	}
 }

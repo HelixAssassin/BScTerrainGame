@@ -116,6 +116,7 @@
     <Compile Include="Assets\InteractionScript.cs" />
     <Compile Include="Assets\LookX.cs" />
     <Compile Include="Assets\LookY.cs" />
+    <Compile Include="Assets\menuScript.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
     <Compile Include="Assets\shootingScript.cs" />
     <Compile Include="Assets\Snow Package\atsV3 UnityTerrainSnow Package\Scripts\CustomTerrainScriptAtsV3Snow.cs" />
