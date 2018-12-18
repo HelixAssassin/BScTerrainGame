@@ -65,6 +65,7 @@
     <Compile Include="Assets\DoorOpenScript.cs" />
     <Compile Include="Assets\EnemyAttack.cs" />
     <Compile Include="Assets\EnemyMovement.cs" />
+    <Compile Include="Assets\EnemyNavMovement.cs" />
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\GreenForest\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\GreenForest\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
@@ -117,14 +118,19 @@
     <Compile Include="Assets\LookX.cs" />
     <Compile Include="Assets\LookY.cs" />
     <Compile Include="Assets\menuScript.cs" />
+    <Compile Include="Assets\MiniMapScript.cs" />
+    <Compile Include="Assets\MobilityArts\SciFiHandGun\Scripts\OrbitAroundTarget.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
+    <Compile Include="Assets\RTSStyle.cs" />
     <Compile Include="Assets\shootingScript.cs" />
     <Compile Include="Assets\Snow Package\atsV3 UnityTerrainSnow Package\Scripts\CustomTerrainScriptAtsV3Snow.cs" />
     <Compile Include="Assets\Snow Package\Demo\ExtendedFlycam.cs" />
     <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\LookCamera.cs" />
     <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\SkyboxChanger.cs" />
     <Compile Include="Assets\UIScript.cs" />
+    <Compile Include="Assets\Waypoints.cs" />
     <None Include="Assets\GreenForest\PostProcessing\Resources\Shaders\DepthOfField.shader" />
+    <None Include="Assets\Canopus-III_Low-Poly_Sci-Fi_Desert_Units_Set\documentation - Low-Poly_Sci-Fi_Desert_Units_Set.txt" />
     <None Include="Assets\GreenForest\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
     <None Include="Assets\GreenForest\PostProcessing\Resources\Shaders\Fog.shader" />
     <None Include="Assets\GreenForest\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />

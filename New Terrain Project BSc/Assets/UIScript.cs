@@ -1,6 +1,8 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System;
 
 public class UIScript : MonoBehaviour {
 
@@ -8,56 +10,31 @@ public class UIScript : MonoBehaviour {
     public Text healthTxt;
     public Slider healthBar;
     public Text scoreNum;
-    public Text timeNum;
+    public Text timenum;
     static int score;
 
-	// Use this for initialization
-	void Start () {
-
-        GameManager manager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-
-        healthBar = manager.playerHealth;
-        healthTxt = manager.playerHealthTxt;
-        scoreNum = manager.score;
-        timeNum = manager.timeTxt;
+    // Use this for initialization
+    void Start() {
 
         healthBar.maxValue = healthScript.getMaxHealth();
         healthBar.value = healthScript.getHealth();
-        healthTxt.text = "Health" + healthScript.getHealth();
-
+        healthTxt.text = "Health: " + healthScript.getHealth();
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    public static void updateScore(int amount)
+    {
+        score += amount;
+    }
+
+    // Update is called once per frame
+    void Update()
     {
         healthBar.value = healthScript.getHealth();
         healthTxt.text = "Health: " + healthScript.getHealth();
-        timeNum.text = "" + (int)Time.time;
-        scoreNum.text = score + "";
-		
-
-	}
-
-    public static void updateScore(int amount)
-        {
-            score += amount;
-        }
-
-
-    IEnumerator updateUI()
-    {
-        healthbar.value = healthScript.getHealth();
-        playerHealthTxt.text = "Health: " + healthScript.getHealth();
-        timeNum.text = "" + (int)Time.time;
+        timenum.text = "" + (int)Time.time;
         scoreNum.text = score + "";
 
-        if (healthScript.IsDead)
-        {
-            losePanel.SetActive(true);
-            Time.timeScale = 0;
-        }
-        yield return new WaitForSeconds(0.5f);
-        StartCoroutine("updateUI");
+
     }
 
 }
