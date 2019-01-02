@@ -30,12 +30,13 @@ public class PlayerMovement : MonoBehaviour {
         anim.SetFloat("Direction", h);
 
         // This is the movespeed variable for the player and this allows the object to move.
-        Vector3 direction = new Vector3(h, 0, v);
+        Vector3 direction = new Vector3 (h, 0, v);
         Vector3 velocity = direction * moveSpeed;
 
         if (charController.isGrounded) {
             if (Input.GetButtonDown("Jump"))
             {
+                anim.SetTrigger("Jump");
                 yVelocity = jumpSpeed;
             }
 
