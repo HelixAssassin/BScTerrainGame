@@ -7,10 +7,12 @@ public class shootingScript : MonoBehaviour
 
     [SerializeField] int damageDealt = 20;
     [SerializeField] LayerMask layermask;
+    LayerMask layerMask;
+    Animator anim;
 
 	// Use this for initialization
-	void Start ()
- {
+	void Start () {
+        anim = GetComponent<Animator>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 		
@@ -32,6 +34,7 @@ public class shootingScript : MonoBehaviour
 
             Ray mouseRay = GetComponentInChildren<Camera>().ViewportPointToRay(new Vector3(5.0f, 5.0f, 0));
             RaycastHit hitInfo;
+            anim.SetTrigger("Fire");
 
             if(Physics.Raycast(mouseRay,out hitInfo))
             {
