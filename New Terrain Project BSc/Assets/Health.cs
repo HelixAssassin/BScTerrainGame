@@ -13,8 +13,8 @@ public class Health : MonoBehaviour
     void Start()
     {
         currentHealth = maximumHealth;
+        anim = GetComponent<Animator>(;
     }
-
     //This means when the health reaches 0 the player will be dead.
     public bool IsDead { get { return currentHealth <= 0; } }
 
@@ -33,12 +33,22 @@ public class Health : MonoBehaviour
     {
         currentHealth -= damageValue;
 
-        if (currentHealth <= 0)
-        {
+        if (currentHealth <= 0){
             if (gameObject.tag != "Player")
             {
+                if(anim)
+                {
+                    anim.SetBool("Dead", true);
+                }
+
                 Destroy(gameObject);
                 UIScript.updateScore(50);
+                Destroy(GetComponent<EnemyNavMovement>());
+                Destroy(GetComponent<UnityEngine.AI.NavMeshAgent>());
+                Destroy(GetComponent<CharacterController>());
+                Destroy(GetComponentInChildren<EnemyAttack>());
+
+                GameManager.amountkilled++;
 
             }
 

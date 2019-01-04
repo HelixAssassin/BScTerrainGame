@@ -1326,7 +1326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackDelay: 1
-  damageDealt: 25
+  damageDealt: 5
 --- !u!135 &390020018
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1615,9 +1615,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1c4cbfe0b5b6b4b9d0080e95c7bdf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivityY: 1
-  minimumY: -90
-  maximumY: 90
+  sensitivityY: 0
+  minimumY: -30
+  maximumY: 30
 --- !u!1 &606287372 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1360174760183796, guid: 9672b079320dcb941a9222c2ac6653cb,
@@ -2400,7 +2400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6af10daf8721a8a43b7ce40db3c03200, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 897565436}
+  target: {fileID: 0}
 --- !u!114 &737038100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2911,7 +2911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpSpeed: 20
   gravity: 1
-  moveSpeed: 15
+  moveSpeed: 5
   h: 0
   v: 0
 --- !u!114 &897565433
@@ -3400,8 +3400,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthScript: {fileID: 0}
-  healthTxt: {fileID: 1642048321}
-  healthBar: {fileID: 1035026372}
+  healthTxt: {fileID: 0}
+  healthBar: {fileID: 0}
   scoreNum: {fileID: 0}
   timenum: {fileID: 0}
 --- !u!1 &1038335988
@@ -5534,7 +5534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6897a707091e4b64ea119f9b03945d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 1035026372}
+  playerHealth: {fileID: 0}
   score: 0
   playerHealthTxt: 0
   timeTxt: 0
