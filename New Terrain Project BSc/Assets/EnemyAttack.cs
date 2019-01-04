@@ -17,6 +17,7 @@ public class EnemyAttack : MonoBehaviour {
     {
         if (other.tag == "Player"&&Time.time>=nextTimeAttackIsAllowed) {
             Health playerHealth = other.GetComponent<Health>();
+            anim.SetTrigger("Attack");
             playerHealth.Damage(damageDealt);
             nextTimeAttackIsAllowed = Time.time + attackDelay;
         }
@@ -24,8 +25,11 @@ public class EnemyAttack : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
-	}
+        Animator anim;
+        {
+            anim = GetComponentInParent<Animation>();
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {

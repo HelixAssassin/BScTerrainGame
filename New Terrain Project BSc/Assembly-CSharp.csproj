@@ -57,6 +57,7 @@
      <Compile Include="Assets\DoorOpenScript.cs" />
      <Compile Include="Assets\EnemyAttack.cs" />
      <Compile Include="Assets\EnemyMovement.cs" />
+     <Compile Include="Assets\EnemyNavAnimations.cs" />
      <Compile Include="Assets\EnemyNavMovement.cs" />
      <Compile Include="Assets\GameManager.cs" />
      <Compile Include="Assets\GreenForest\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />

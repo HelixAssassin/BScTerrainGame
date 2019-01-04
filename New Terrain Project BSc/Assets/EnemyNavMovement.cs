@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyNavMovement : MonoBehaviour {
 
@@ -18,6 +19,7 @@ public class EnemyNavMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        agent = GetComponent<NavMeshAgent> ();
         agent.SetDestination(target.position);
         if(agent.remainingDistance<(agent.stoppingDistance + 0.5f))
         {
