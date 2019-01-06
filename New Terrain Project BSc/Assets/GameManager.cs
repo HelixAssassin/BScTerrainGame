@@ -9,7 +9,9 @@ public class GameManager : MonoBehaviour {
     public TextAlignment score;
     public TextAlignment playerHealthTxt;
     public TextAlignment timeTxt;
-   
+
+    public static int amountkilled { get; internal set; }
+
 
     // Use this for initialization
     void Start () {
