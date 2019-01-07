@@ -107,6 +107,7 @@
      <Compile Include="Assets\GreenForest\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
      <Compile Include="Assets\healPickup.cs" />
      <Compile Include="Assets\Health.cs" />
+     <Compile Include="Assets\HelicopterScript.cs" />
      <Compile Include="Assets\InteractionScript.cs" />
      <Compile Include="Assets\LookX.cs" />
      <Compile Include="Assets\LookY.cs" />

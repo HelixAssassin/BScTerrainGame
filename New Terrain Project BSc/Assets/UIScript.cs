@@ -35,6 +35,12 @@ public class UIScript : MonoBehaviour {
         scoreNum.text = score + "";
 
 
+        if (healthScript.IsDead)
+        {
+            losePanel.SetActive(true);
+            Time.timeScale = 0;
+        }
+
     }
 
 }
